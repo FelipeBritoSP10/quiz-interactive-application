@@ -3,7 +3,9 @@
 ![preview](./project-quiz/docs/preview-quiz.gif)
 
 ## 📝 Visão Geral
-O **Quiz Interativo** é um projeto desenvolvido com HTML, CSS e JavaScript puro, criado para demonstrar a construção de um sistema dinâmico de perguntas e respostas. 
+
+O *Quiz Interativo* é um projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas (ADS) da Estácio. Ele foi criado com o objetivo de aplicar, na prática, os conceitos fundamentais de HTML, CSS e JavaScript puro na construção de um sistema dinâmico de perguntas e respostas.
+
 O projeto mostra na prática o uso de **eventos**, **arrays de objetos**, **manipulação do DOM** e **lógica condicional**, proporcionando uma experiência interativa e intuitiva para o usuário. Este projeto é ideal para quem deseja aprender ou mostrar habilidades em desenvolvimento web front-end.
 
 - **Propósito**: Esse projeto foi pensado para ser **simples, responsivo e educativo**, para demonstrar o domínio de lógica e prática com manipulação do DOM em JavaScript puro.
