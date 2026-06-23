@@ -47,4 +47,3 @@ O projeto `quiz-interactive` está organizado da seguinte forma:
 - **CSS3**: Estilização personalizada (quiz.css, result.css, style.css).
 - **JavaScript**: Lógica do jogo (quiz.js, result.js, script.js).
 
-## 🧩 Estrutura do Projeto
