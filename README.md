@@ -1,51 +1,59 @@
-# Quiz Interativo
+# 🚀 Quiz Interativo — Web Development
 
 ![preview](./project-quiz/docs/preview-quiz.gif)
 
-## 📝 Visão Geral
+## 🎓 Projeto Acadêmico
 
-O *Quiz Interativo* é um projeto acadêmico desenvolvido para a disciplina de Desenvolvimento Web do curso de Análise e Desenvolvimento de Sistemas (ADS) da Estácio. Ele foi criado com o objetivo de aplicar, na prática, os conceitos fundamentais de HTML, CSS e JavaScript puro na construção de um sistema dinâmico de perguntas e respostas.
+O **Quiz Interativo** é um projeto de desenvolvimento front-end acadêmico elaborado para a disciplina de **Desenvolvimento Web** do curso de **Análise e Desenvolvimento de Sistemas (ADS)** da **Estácio**. Seu objetivo principal é consolidar práticas de manipulação do DOM, controle de estado e arquitetura limpa em JavaScript puro.
 
-O projeto mostra na prática o uso de **eventos**, **arrays de objetos**, **manipulação do DOM** e **lógica condicional**, proporcionando uma experiência interativa e intuitiva para o usuário. Este projeto é ideal para quem deseja aprender ou mostrar habilidades em desenvolvimento web front-end.
+---
 
-- **Propósito**: Esse projeto foi pensado para ser **simples, responsivo e educativo**, para demonstrar o domínio de lógica e prática com manipulação do DOM em JavaScript puro.
+## 🎯 Objetivos do Projeto
+
+- **Avaliação Acadêmica:** Projeto prático desenvolvido como atividade complementar e avaliativa valendo nota para a disciplina de **Desenvolvimento Web** do curso de **Análise e Desenvolvimento de Sistemas (ADS)** da **Estácio**.
+- **Consolidação Prática:** Aplicar conceitos fundamentais de desenvolvimento web aprendidos na disciplina com construção de uma aplicação real.
+- **Arquitetura Limpa:** Implementar a Separação de Conceitos (SoC) utilizando ES6 Modules nativos sem a necessidade de *bundlers* ou *frameworks*.
+- **Medição de Desempenho:** Construir um fluxo dinâmico de pontuação e renderização visual de resultados via biblioteca gráfica.
+- **Qualidade de Software:** Garantir conformidade com as diretrizes da norma ISO/IEC 9126, com foco em alta manutenibilidade e confiabilidade.
+
+---
+
+## 🛠️ Tecnologias & Ecossistema
+
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" /> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" /> <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" /> <img src="https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white" />
+
+---
+
+## 🏛️ Qualidade & Arquitetura (ISO/IEC 9126)
+
+| Atributo ISO 9126 | Aplicação Prática na Arquitetura |
+| :--- | :--- |
+| **Manutenibilidade** | Separação estrita em camadas (`data`, `services`, `ui`, `controllers`) e aderência ao princípio SRP. |
+| **Confiabilidade** | Isolamento de contexto por página, evitando exceções runtime (*null pointers*). |
+| **Portabilidade** | Uso de ES6 Modules nativos (`import`/`export`) sem necessidade de *bundlers* ou transpiladores. |
+| **Funcionalidade** | Camada de serviço desacoplada (`StorageService`) garantindo integridade dos dados salvos. |
+| **Usabilidade** | Interface reativa com feedback imediato de respostas e gráfico visual dinamizado. |
+| **Eficiência** | Carregamento sob demanda de scripts leves executados no lado do cliente (*Client-Side*). |
+
+---
 
 ## 🚀 Funcionalidades
 
-- **Tela de Início**: Permite que o usuário insira seu nome antes de começar.
-- **Iniciar Quiz**: Botão que inicia o jogo e redireciona para as perguntas.
-- **Perguntas Dinâmicas**: Carregamento de perguntas e alternativas via JavaScript.
-- **Verificação de Respostas**: Feedback em tempo real sobre acertos e erros.
-- **Resultado Final**: Exibe a pontuação e uma mensagem personalizada baseada no desempenho.
-- **Reinício**: Opção para reiniciar o quiz após o término.
+| Etapa | Descrição |
+| :--- | :--- |
+| **Home** | Validação e cadastro inicial do nome do estudante. |
+| **Quiz** | Cronômetro regressivo (120s/questão) com feedback instantâneo de acertos/erros. |
+| **Resultado** | Dashboard com aproveitamento percentual, gráfico e revisão de gabarito. |
 
-## 📂 Estrutura de Arquivos
+---
 
-O projeto `quiz-interactive` está organizado da seguinte forma:
+## 📂 Estrutura do Projeto
 
-- `project-quiz/`
-  - `docs/`
-    - `README.md`: Documentação inicial do projeto.
-  - `icons/`
-    - `clock-icon.svg`: Ícone para relógio (possivelmente usado na interface).
-    - `form-icon.svg`: Ícone para formulário (possivelmente usado na tela inicial).
-  - `pages/`
-    - `homepage.html`: Página inicial do quiz.
-    - `quiz.html`: Página com as perguntas e alternativas.
-    - `result.html`: Página de resultados com pontuação.
-  - `scripts/`
-    - `quiz.js`: Lógica JavaScript para a página de perguntas.
-    - `result.js`: Lógica JavaScript para a página de resultados.
-    - `script.js`: Arquivo JavaScript genérico (pode conter funções globais).
-  - `styles/`
-    - `quiz.css`: Estilos específicos para a página de perguntas.
-    - `result.css`: Estilos específicos para a página de resultados.
-    - `style.css`: Estilos gerais do projeto.
-- `README.md`: Arquivo principal de documentação no nível raiz.
-
-## 🛠️ Tecnologias Utilizadas
-
-- **HTML5**: Estruturação das páginas (homepage.html, quiz.html, result.html).
-- **CSS3**: Estilização personalizada (quiz.css, result.css, style.css).
-- **JavaScript**: Lógica do jogo (quiz.js, result.js, script.js).
-
+| Diretório / Arquivo | Responsabilidade |
+| :--- | :--- |
+| `project-quiz/data/` | Módulo de dados e questões brutas |
+| `project-quiz/scripts/services/` | Abstração da Web Storage API (`StorageService`) |
+| `project-quiz/scripts/ui/` | Camada exclusiva de manipulação do DOM (`QuizUI`, `ResultUI`) |
+| `project-quiz/scripts/` | Controllers de fluxo por página (`quiz.js`, `result.js`, `script.js`) |
+| `project-quiz/pages/` | Interfaces HTML do quiz e do resultado |
+| `index.html` | Ponto de entrada (Home) na raiz do repositório |
