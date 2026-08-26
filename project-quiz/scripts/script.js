@@ -1,3 +1,5 @@
+import { StorageService } from "./services/storage.js";
+
 // Captura o botão e o input
 const startBtn = document.getElementById('start-btn');
 const usernameInput = document.getElementById('usernameInput');
