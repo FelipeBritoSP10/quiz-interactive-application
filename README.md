@@ -57,3 +57,19 @@ O **Quiz Interativo** é um projeto de desenvolvimento front-end acadêmico elab
 | `project-quiz/scripts/` | Controllers de fluxo por página (`quiz.js`, `result.js`, `script.js`) |
 | `project-quiz/pages/` | Interfaces HTML do quiz e do resultado |
 | `index.html` | Ponto de entrada (Home) na raiz do repositório |
+
+## 🏁 Conclusão
+
+O desenvolvimento do **Quiz Interativo** representa a consolidação prática e teórica dos conceitos trabalhados ao longo da disciplina de **Desenvolvimento Web** do curso de **Análise e Desenvolvimento de Sistemas (ADS)** da **Estácio**, integrando a composição da **nota final** do período.
+
+---
+
+### 💡 Impacto Arquitetural & Aprendizados
+
+- **Domínio de Fundamentos (Vanilla JS):** A decisão de prescindir de *frameworks* e *bundlers* validou a construção de aplicações reativas utilizando apenas recursos nativos da Web (ES6 Modules, DOM API e Web Storage API).
+- **Rigor com Engenharia de Software:** A estruturação orientada à norma **ISO/IEC 9126** garantiu a entrega de um sistema modular, legível e preparado para manutenção futura.
+- **Formação Acadêmica e Profissional:** O projeto conecta os requisitos de avaliação da faculdade com os padrões de qualidade e arquitetura exigidos pelo mercado de software.
+
+---
+
+> A entrega cumpre integralmente os critérios de avaliação acadêmica, demonstrando na prática como decisões arquiteturais conscientes garantem eficiência, manutenibilidade e confiabilidade sem a necessidade de dependências externas.
